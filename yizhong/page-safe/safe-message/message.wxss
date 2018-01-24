@@ -1,0 +1,54 @@
+
+
+.input-date {
+  display: flex;
+  flex-direction: row;
+}
+
+.input1 {
+  background-color: #fff;
+  width: 200rpx;
+  height: 60rpx;
+  border: solid 2px #fff;
+  border-radius: 6px;
+}
+
+.calculate-date {
+  display: flex;
+  flex-direction: row;
+  padding: 10rpx;
+  margin-top: 10rpx;
+  background-color: #fff;
+  border: solid 2px #ccc;
+  border-radius: 6px;
+}
+
+.check-switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.switch {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.date1 {
+  margin-left: 20rpx;
+}
+
+.date2 {
+  margin-left: 10rpx;
+}
+
+.text-view {
+  font-size: 24rpx;
+  padding-bottom: 20rpx;
+   border-bottom: solid 2px #000;
+}
+
+.text {
+  color: red;
+}

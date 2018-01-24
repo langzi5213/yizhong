@@ -1,0 +1,7 @@
+<!--page-banking/home.wxml-->
+<view style="display:flex;">
+<view style="background-color:red;flex-grow:1;height:80rpx;">1</view>
+<view style="background-color:blue;flex-grow:1;height:80rpx;">2</view>
+<view style="background-color:green;flex-grow:1;height:80rpx;">3</view>
+
+</view>

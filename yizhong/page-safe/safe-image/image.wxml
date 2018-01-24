@@ -1,0 +1,62 @@
+<view class="forms">
+  <form bindsubmit="submit" bindreset="reset">
+
+
+    <view class="view-image" bindtap="chooseImage">
+      被保险人身份证正面照片上传：
+      <image class="input-image1" src="{{sfzqm}}" id="0" />
+    </view>
+    <view class="view-image" bindtap="chooseImage">
+      被保险人身份证背面照片上传：
+      <image class="input-image1" src="{{sfzbm}}" id="1" />
+    </view>
+
+
+
+    <view class="view-image" bindtap="chooseImage">
+      档案证书/合格证/发票：
+      <image class="input-image1" src="{{hegezheng}}" id="2" />
+    </view>
+
+
+
+    <view class="view-image" bindtap="chooseImage">
+      整车和身份证照片：
+      <image class="input-image1" src="{{zhengchesfz}}" id="3" />
+    </view>
+    <view class="view-image" bindtap="chooseImage">
+      设备照片（正前方）：
+      <image class="input-image1" src="{{zhengqianfang}}" id="4" />
+    </view>
+    <view class="view-image" bindtap="chooseImage">
+      设备照片（左前方）：
+      <image class="input-image1" src="{{zuoqianfang}}" id="5" />
+    </view>
+    <view class="view-image" bindtap="chooseImage">
+      设备照片（右前方）：
+      <image class="input-image1" src="{{youqianfang}}" id="6" />
+    </view>
+    <view class="view-image" bindtap="chooseImage">
+      设备照片（右后方）：
+      <image class="input-image1" src="{{youhoufang}}" id="7" />
+    </view>
+    <view class="view-image" bindtap="chooseImage">
+      设备照片（左后方）：
+      <image class="input-image1" src="{{zuohoufang}}" id="8" />
+    </view>
+
+    <view class="view-image">
+      铭牌和身份证照片：
+      <input class="input-col" type="text" name="namePlate" placeholder="请输入铭牌号" />
+      <image class="input-image1" src="{{namePlate}}" bindtap="chooseImage" id="9" />
+    </view>
+
+    <view class="view-image">
+      发动机铭牌照片：
+      <input class="input-col" type="text" name="engineNameplate" placeholder="请输入发动机号" />
+      <image class="input-image1" src="{{engineNameplate}}" bindtap="chooseImage" id="10" />
+    </view>
+    <button class="login-button" type="primary" form-type="submit">立即投保</button>
+    <button class="login-button" form-type="reset">重置</button>
+  </form>
+</view>

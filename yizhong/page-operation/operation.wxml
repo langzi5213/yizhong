@@ -1,0 +1,150 @@
+<view class="forms">
+  <form bindsubmit="submit" bindreset="reset">
+    <view class="inputview-row">
+      <radio-group name="sex">性别：
+        <radio value="1" checked="true">男</radio>
+        <radio value="2">女</radio>
+      </radio-group>
+    </view>
+    <view class="inputview-row">
+      <picker value="{{indexCertificates}}" range="{{certificatesList}}" bindchange="certificatesChange" name="certificate">
+        <view class="input-date">
+          办证：
+          <view class="input-row">{{certificatesList[indexCertificates]}}</view>
+        </view>
+      </picker>
+    </view>
+
+    <view wx:if="{{czz}}" class="inputview-row">
+      <picker value="{{indexKind}}" range="{{kindList}}" bindchange="kindChange" name="kind">
+        <view class="input-date">
+          类型：
+          <view class="input-row">{{kindList[indexKind]}}</view>
+        </view>
+      </picker>
+    </view>
+    <view wx:if="{{pgsz}}" class="inputview-row">
+      <radio-group name="level">级别：
+        <radio value="1" checked="true">初级</radio>
+        <radio value="2">中级</radio>
+        <radio value="3">高级</radio>
+      </radio-group>
+    </view>
+    <view wx:if="{{wxjsz}}" class="inputview-row">
+      <radio-group name="level">级别：
+        <radio value="1" checked="true">初级</radio>
+        <radio value="2">中级</radio>
+        <radio value="3">高级</radio>
+        <radio value="4">专家级</radio>
+      </radio-group>
+    </view>
+
+    <view class="inputview-row">
+      姓名：
+      <input class="input-row" type="text" placeholder="{{name}}" name="name" bindinput="name" />
+    </view>
+
+    <view class="inputview-row">
+      证件：
+      <textarea class="input-row" name="idCard" bindinput="idCard" placeholder="{{idCard}}"></textarea>
+    </view>
+    <view class="inputview-row">
+      <picker mode="date" filed="day" bindchange="birthdayChange" name="birthday">
+        <view class="input-date">
+          出生：
+          <view class="input-row">{{selectDate}}</view>
+        </view>
+      </picker>
+    </view>
+
+    <view class="inputview-row">
+      <picker value="{{indexEducation}}" range="{{educationList}}" bindchange="educationChange" name="education">
+        <view class="input-date">
+          学历：
+          <view class="input-row">{{educationList[indexEducation]}}</view>
+        </view>
+      </picker>
+    </view>
+    <view class="inputview-row">
+      单位：
+      <textarea class="input-row" name="company" bindinput="company" placeholder="{{company}}"></textarea>
+    </view>
+    <view class="inputview-row">
+      籍贯：
+      <input class="input-row" type="text" name="origin" bindinput="origin" placeholder="{{origin}}" />
+    </view>
+    <view class="inputview-row">
+      地址：
+      <textarea class="input-row" name="address" bindinput="address" placeholder="{{address}}"></textarea>
+    </view>
+    <view class="inputview-row">
+      手机：
+      <input class="input-row" type="text" name="phoneNumber" bindinput="phoneNumber" placeholder="{{phoneNumber}}" />
+    </view>
+    <view class="inputview-row">
+      邮箱：
+      <input class="input-row" type="text" name="eMail" bindinput="eMail" placeholder="{{eMail}}" />
+    </view>
+    <view class="inputview-row">
+      工龄：
+      <input class="input-row" type="text" name="year" bindinput="year" placeholder="year" />
+    </view>
+
+    <!-- <view class="inputview-col">
+      证书有效期：
+      <view class="inputview-row">
+        <picker mode="date" filed="day" bindchange="cerStartChange" name="cerStartdata">
+          <view class="input-date">
+            <view class="input-rowdate">{{selectCerstart}}</view>
+          </view>
+        </picker>
+        --
+        <picker mode="date" filed="day" bindchange="cerEndChange" name="cerEnddata">
+          <view class="input-date">
+            <view class="input-rowdate">{{selectCerend}}</view>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view class="inputview-col">
+      培训起止时间：
+      <view class="inputview-row">
+        <picker mode="date" filed="day" bindchange="trainStartChange" name="trainStartdata">
+          <view class="input-date">
+            <view class="input-rowdate">{{selectTrainstart}}</view>
+          </view>
+        </picker>
+        --
+        <picker mode="date" filed="day" bindchange="trainEndchenag" name="trainEnddata">
+          <view class="input-date">
+            <view class="input-rowdate">{{selectTrainend}}</view>
+          </view>
+        </picker>
+      </view>
+    </view> -->
+
+
+    <view class="view-textarea">
+      备注：
+      <textarea class="input-textarea" name="remark" bindinput="remark" placeholder="{{remark}}"></textarea>
+    </view>
+
+
+
+    <view class="view-textarea" bindtap="chooseImage">
+      身份证正面照片上传：
+      <image class="input-image1" src="{{sfzqm}}" id="0" />
+    </view>
+    <view class="view-textarea" bindtap="chooseImage">
+      身份证背面照片上传：
+      <image class="input-image1" src="{{sfzbm}}" id="1" />
+    </view>
+    <view class="view-textarea" bindtap="chooseImage">
+      白底彩色照片上传：
+      <image class="input-image2" src="{{rentou}}" id="2" />
+    </view>
+
+    <button class="login-button" type="primary" form-type="submit">提交</button>
+    <button class="login-button" form-type="reset">重置</button>
+  </form>
+</view>
