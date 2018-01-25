@@ -1,0 +1,100 @@
+<view class="forms">
+  <form bindsubmit="submit" bindreset="reset">
+
+
+    <view class="inputview-row1">
+      设备品牌：
+      <input class="input-row" name="deviceBrand" bindinput="deviceBrand" placeholder="{{deviceBrand}}" /> </view>
+
+    <view class="inputview-row1">
+      设备类型：
+      <input class="input-row" name="deviceType" bindinput="deviceType" placeholder="{{deviceType}}" /> </view>
+
+    <view class="inputview-row1">
+      设备型号：
+      <input class="input-row" name="deviceModel" bindinput="deviceModel" placeholder="{{deviceModel}}" /> </view>
+
+    <view class="inputview-row1">
+      机械颜色：
+      <input class="input-row" name="deviceColor" bindinput="deviceColor" placeholder="{{deviceColor}}" /> </view>
+    <view class="inputview-row1">
+      发动机型号：
+      <input class="input-row" name="engineModel" bindinput="engineModel" placeholder="{{engineModel}}" /> </view>
+    <view class="inputview-row1">
+      发动机功率：
+      <input class="input-row" name="enginePower" bindinput="enginePower" placeholder="{{enginePower}}" /> </view>
+
+    <view class="inputview-row1">
+      发动机编号：
+      <input class="input-row" name="enginePlateNum" bindinput="enginePlateNum" placeholder="{{enginePlateNum}}" /> </view>
+
+
+    <view class="inputview-row1">
+      出厂日期：
+      <picker value="{{produceDate}}" mode="date" start="{{startDate}}" end="{{endDate}}" filed="day" bindchange="produceChange" name="produceDate">
+        <view class="input-date">
+          <view class="input-row">{{produceDate}}</view>
+        </view>
+      </picker>
+    </view>
+
+    <view class="inputview-row1">
+      购买日期：
+      <picker value="{{buyDate}}" mode="date" start="{{startDate}}" end="{{endDate}}" filed="day" bindchange="buyChange" name="buyDate">
+        <view class="input-date">
+          <view class="input-row">{{buyDate}}</view>
+        </view>
+      </picker>
+    </view>
+
+
+    <view class="inputview-row1">
+      <radio-group name="register" bindchange="registerChange">
+        <radio value="1" checked="true">国产</radio>
+        <radio value="2">合资</radio>
+        <radio value="3">进口</radio>
+      </radio-group>
+    </view>
+
+    <view class="inputview-row1">
+      产地：
+      <input class="input-row" name="orignPlace" bindinput="orignPlace" placeholder="{{orignPlace}}" /> </view>
+
+    <view class="inputview-row1">
+      <radio-group name="register" bindchange="registerChange"> 行走方式：
+        <radio value="1" checked="true">履带</radio>
+        <radio value="2">轮胎</radio>
+      </radio-group>
+    </view>
+
+    <view class="inputview-row1">
+      <radio-group name="register"  bindchange="registerChange"> 燃油种类
+        <radio value="1" checked="true">柴油</radio>
+        <radio value="2">汽油</radio>
+        <radio value="3">天然气</radio>
+      </radio-group>
+    </view>
+
+    <view class="inputview-row1">
+      工作小时：
+      <input class="input-row" name="workHours" bindinput="workHours" placeholder="{{workHours}}" /> </view>
+    <view class="inputview-row1">
+      整机重量：
+      <input class="input-row" name="weight" bindinput="weight" placeholder="{{weight}}" /> </view>
+
+    <view class="inputview-row1">
+      尾气排放值：
+      <input class="input-row" name="tailGas" bindinput="tailGas" placeholder="{{tailGas}}" /> </view>
+
+    <view class="inputview-row1">
+      设备编号：
+      <input class="input-row" name="deviceNum" bindinput="deviceNum" placeholder="{{deviceNum}}" /> </view>
+
+    <view class="inputview-row1">
+      出厂编号：
+      <input class="input-row" name="produceNum" bindinput="produceNum" placeholder="{{produceNum}}" /> </view>
+
+    <button class="login-button" form-type="reset">重置</button>
+    <button class="login-button" type="primary" form-type="submit">下一步</button>
+ </form>
+</view>

@@ -1,0 +1,15 @@
+<view class="login">
+  <view>
+    <image class="advertisement" src="/images/yizhong.png" />
+
+  </view>
+  <view class="login-input">
+    账户：
+    <input class="input" type="text" bindinput="userNameInput" placeholder="请输入用户名" />
+  </view>
+  <view class="login-input">
+     密码：
+    <input class="input" type="text" bindinput="userPasswordInput" placeholder="请输入密码" password="true" />
+  </view>
+  <button class="login-button" type="primary" bindtap="logIn">登录</button>
+</view>
