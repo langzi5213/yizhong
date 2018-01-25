@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:background="@drawable/xiaowaji1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_shang_miaoshu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="出售小松60挖掘机"
+            android:textColor="#000000"
+            android:textSize="19sp" />
+
+        <TextView
+            android:id="@+id/tv_shang_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="内蒙古包头市昆都伦区" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+             android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center_vertical"
+                 android:background="@drawable/price" />
+
+            <TextView
+                android:id="@+id/tv_shang_prise"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500000"
+                android:textColor="#ff0000"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp" />
+            <TextView
+                android:id="@+id/tv_shang_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017-8-25"
+                android:layout_marginRight="5dp" />
+
+             
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
